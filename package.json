@@ -1,13 +1,17 @@
 {
-  "name": "maria-esfera-portfolio-root",
+  "name": "maria-esfera-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Fullstack Portfolio Website for Maria Esfera Dyah Untari",
+  "type": "module",
   "scripts": {
-    "server": "cd server && node index.js",
-    "client": "cd client && npx vite --host",
-    "build:client": "cd client && npx vite build",
-    "start": "cd server && node index.js"
+    "build": "cd client && npm install && npm run build",
+    "dev": "cd client && npx vite --host",
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "cd client && npx vite --host"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
   }
 }
-
