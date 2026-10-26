@@ -20,3 +20,4 @@ try {
 } catch (err) {
   console.error('Error syncing dist:', err);
 }
+
