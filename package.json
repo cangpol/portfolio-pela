@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "cd client && npm install && npm run build",
+    "build": "cd client && npm install && npm run build && node ../scripts/sync-dist.js",
     "dev": "cd client && npx vite --host",
     "start": "node server/index.js",
     "server": "node server/index.js",
